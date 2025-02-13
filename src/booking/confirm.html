@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Swerv</title>
+    <link rel="icon" type="image/x-icon" href="/assets/swerv_logo.svg">
+    <script type="module" src="../js/info-select.js"></script>
+</head>
+
+<body class="bg-body-tertiary">
+
+    <!-- TOP NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between px-3">
+        <div class="d-flex gap-4">
+            <a href="/"><img src="../assets/swerv_logo.svg" alt="Swerv" width="30" height="30" /></a>
+            <i class="bi bi-person-circle h3 mb-0"></i>
+            <div class="dropdown">
+                <button type="button" class="btn-dark dropdown-toggle nav-link" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="bi bi-translate h3"></i></button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav gap-3">
+                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="/services">Services</a>
+                    <a class="nav-link" href="/location">Location</a>
+                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link" href="/review">Leave a Review</a>
+                    <a class="btn btn-success active disabled" aria-current="page" href="/booking/select">Booking...</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+
+    <div class="container py-4 px-3 mx-auto">
+        <h1 class="display-1 text-dark">Confirm Booking</h1>
+        <div class="d-flex">
+            <div class="container-fluid">
+                <h2 class="display-6" id="selectedServiceTitle"></h2>
+                <br>
+                <div style="width: 40rem; height: 30rem;" id="selectedServiceImageDiv">
+
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="form-group">
+                    <div class="mb-3">
+                        <label for="nameInput" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Enter name" required>
+                        <div class="invalid-feedback">
+                            Please enter your name.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="carInput" class="form-label">Car Information</label>
+                        <input type="text" class="form-control" id="carInput" placeholder="Car Model, Make, Year"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="requestInput" class="form-label">(Optional) Special Requests</label>
+                        <textarea class="form-control" id="requestInput" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-end">
+            <button class="btn btn-success" id="continue">Submit Booking</button>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAVBAR-->
+
+    <nav class="navbar fixed-bottom navbar-light bg-dark">
+        <div class="container-fluid">
+            <p class="text-light">2025, Swerv Auto Services</p>
+            <div>
+                <p class="text-light"><i class="bi bi-telephone"></i> 613-723-7978</p>
+            </div>
+            <div>
+                <p class="text-light"><i class="bi bi-geo-alt"></i> 1638 Carling Ave, Ottawa, ON, K2A-1CA</p>
+            </div>
+            <div>
+                <p class="text-light"><i class="bi bi-clock"></i> Monday - Friday, 7:30 am - 6 pm</p>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

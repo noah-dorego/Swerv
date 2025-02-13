@@ -2,3 +2,15 @@
 @use "bootstrap-icons/font/bootstrap-icons.css";
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+.card-img-top {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+}
+
+.card-img-top-two {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+}
