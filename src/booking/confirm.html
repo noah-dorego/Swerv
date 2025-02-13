@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Swerv</title>
     <link rel="icon" type="image/x-icon" href="/assets/swerv_logo.svg">
-    <script type="module" src="../js/info-select.js"></script>
+    <script type="module" src="../js/confirm.js"></script>
 </head>
 
 <body class="bg-body-tertiary">
@@ -57,29 +57,15 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <div class="form-group">
-                    <div class="mb-3">
-                        <label for="nameInput" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="nameInput" placeholder="Enter name" required>
-                        <div class="invalid-feedback">
-                            Please enter your name.
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="emailInput" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com"
-                            required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="carInput" class="form-label">Car Information</label>
-                        <input type="text" class="form-control" id="carInput" placeholder="Car Model, Make, Year"
-                            required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="requestInput" class="form-label">(Optional) Special Requests</label>
-                        <textarea class="form-control" id="requestInput" rows="5"></textarea>
-                    </div>
-                </div>
+                <h2 class="display-6 mb-5">Booking Information</h2>
+                <h3 id="date" class="mb-3"> • Date: </h3>
+                <h3 id="time" class="mb-3"> • Time: </h3>
+                <h3 id="name" class="mb-3"> • Name: </h3>
+                <h3 id="email" class="mb-3"> • Email: </h3>
+                <h3 id="car" class="mb-3"> • Car: </h3>
+                <h3 id="expert" class="mb-5"> • Selected Expert: </h3>
+                <h3 class="mb-3">Special Requests: </h3>
+                <p id="request">N/A</p>
             </div>
         </div>
         <br>
