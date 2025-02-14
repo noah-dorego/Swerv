@@ -48,6 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         localStorage.setItem("bookingData", JSON.stringify(bookingData));
-        window.location.href = '/swerv/booking/experts.html';
+        window.location.href = '/swerv/booking/experts';
     });
 });

@@ -8,7 +8,10 @@ export default {
         rollupOptions: {
             input: {
                 index: path.resolve('index.html'),
-                services: path.resolve('services.html')
+                services: path.resolve('services.html'),
+                location: path.resolve('location.html'),
+                contact: path.resolve('contact-us.html'),
+                review: path.resolve('review.html')
             }
         }
     },

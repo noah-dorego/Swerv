@@ -37,6 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
         bookingData["expert"] = selectedExpert;
 
         localStorage.setItem("bookingData", JSON.stringify(bookingData));
-        window.location.href = '/swerv/booking/info.html';
+        window.location.href = '/swerv/booking/info';
     });
 });
