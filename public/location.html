@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Swerv</title>
     <link rel="icon" type="image/x-icon" href="/assets/swerv_logo.svg">
-    <script type="module" src="../js/confirm.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
 </head>
 
 <body class="bg-body-tertiary">
@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-between px-3">
         <div class="d-flex gap-4">
-            <a href="/"><img src="./assets/swerv_logo.svg" alt="Swerv" width="30" height="30" /></a>
+            <a href="/"><img src="/assets/swerv_logo.svg" alt="Swerv" width="30" height="30" /></a>
             <i class="bi bi-person-circle h3 mb-0"></i>
             <div class="dropdown">
                 <button type="button" class="btn-dark dropdown-toggle nav-link" data-bs-toggle="dropdown"
@@ -35,10 +35,10 @@
                 <div class="navbar-nav gap-3">
                     <a class="nav-link" href="/">Home</a>
                     <a class="nav-link" href="/services">Services</a>
-                    <a class="nav-link" href="/location">Location</a>
-                    <a class="nav-link" href="/contact">Contact</a>
+                    <a class="nav-link active" aria-current="page" href="/location">Location</a>
+                    <a class="nav-link" href="/contact-us">Contact</a>
                     <a class="nav-link" href="/review">Leave a Review</a>
-                    <a class="btn btn-success active disabled" aria-current="page" href="/booking/select">Booking...</a>
+                    <a class="btn btn-success" href="/booking/select">Book Now</a>
                 </div>
             </div>
         </div>
@@ -47,30 +47,27 @@
     <!-- PAGE CONTENT -->
 
     <div class="container py-4 px-3 mx-auto">
-        <h1 class="display-1 text-dark">Confirm Booking</h1>
+        <h1 class="display-1 text-dark">Location</h1>
         <div class="d-flex">
+            <div class="">
+                <h2>Swerv Garage</h2>
+                <p>1638 Carling Avenue Ottawa, Ontario K2M2Z8</p>
+                <h2>Hours</h2>
+                <p>Monday to Friday 7:30 am to 6 pm</p>
+                <p>Closed on weekends, available via request</p>
+                <h3>Phone Number</h3>
+                <p>613-723-7978</p>
+                <h3>Email</h3>
+                <p>swerv.auto@gmail.com</p>
+            </div>
             <div class="container-fluid">
-                <h2 class="display-6" id="selectedServiceTitle"></h2>
-                <br>
-                <div style="width: 40rem; height: 30rem;" id="selectedServiceImageDiv">
-
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.4891859883523!2d-75.75017198809331!3d45.37930198897842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce06bcef9cc00b%3A0x7e38d279f455f167!2s1638%20Carling%20Ave%2C%20Ottawa%2C%20ON%20K2A%201C5!5e0!3m2!1sen!2sca!4v1739219945819!5m2!1sen!2sca"
+                        style="border: 0; border-radius: 20px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="container-fluid">
-                <h2 class="display-6 mb-5">Booking Information</h2>
-                <h3 id="date" class="mb-3"> • Date: </h3>
-                <h3 id="time" class="mb-3"> • Time: </h3>
-                <h3 id="name" class="mb-3"> • Name: </h3>
-                <h3 id="email" class="mb-3"> • Email: </h3>
-                <h3 id="car" class="mb-3"> • Car: </h3>
-                <h3 id="expert" class="mb-5"> • Selected Expert: </h3>
-                <h3 class="mb-3">Special Requests: </h3>
-                <p id="request">N/A</p>
-            </div>
-        </div>
-        <br>
-        <div class="d-flex justify-content-end">
-            <button class="btn btn-success" id="continue">Submit Booking</button>
         </div>
     </div>
 

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Swerv</title>
     <link rel="icon" type="image/x-icon" href="/assets/swerv_logo.svg">
-    <script type="module" src="../js/info-select.js"></script>
+    <script type="module" src="/src/js/booking-select.js"></script>
 </head>
 
 <body class="bg-body-tertiary">
@@ -47,39 +47,61 @@
     <!-- PAGE CONTENT -->
 
     <div class="container py-4 px-3 mx-auto">
-        <h1 class="display-1 text-dark">Info</h1>
+        <h1 class="display-1 text-dark">Book</h1>
         <div class="d-flex">
             <div class="container-fluid">
-                <h2 class="display-6 mb-5">Details</h2>
                 <div class="form-group">
-                    <div class="mb-3">
-                        <label for="nameInput" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="nameInput" placeholder="Enter name" required>
-                        <div class="invalid-feedback">
-                            Please enter your name.
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="emailInput" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com"
-                            required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="carInput" class="form-label">Car Information</label>
-                        <input type="text" class="form-control" id="carInput" placeholder="Car Model, Make, Year"
-                            required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="requestInput" class="form-label">(Optional) Special Requests</label>
-                        <textarea class="form-control" id="requestInput" rows="4"></textarea>
-                    </div>
+                    <h2 class="display-6">Select Date</h2>
+                    <input id="date" type="date" min="2050-01-01"
+                        onfocus="this.min=new Date().toISOString().split('T')[0]" required />
+                    <br><br><br>
+                    <h2 class="display-6">Select Time</h2>
+                    <input id="time" type="time" id="bookingTime" required />
                 </div>
             </div>
             <div class="container-fluid">
-                <h2 class="display-6" id="selectedServiceTitle"></h2>
+                <h2 class="display-6">Select Service</h2>
                 <br>
-                <div style="width: 40rem; height: 30rem;" id="selectedServiceImageDiv">
-
+                <div class="row">
+                    <div class="col-lg-3 container-fluid">
+                        <div class="card" style="width: 18rem;" id="interior_detailing">
+                            <img src="./assets/images/services/interior-detailing.jpg" class="card-img-top-two"
+                                alt="Interior Detailing Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Interior Detailing</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 container-fluid">
+                        <div class="card" style="width: 18rem;" id="exterior_detailing">
+                            <img src="./assets/images/services/exterior-detailing.jpg" class="card-img-top-two"
+                                alt="Exterior Detailing Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Exterior Detailing</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-3 container-fluid">
+                        <div class="card" style="width: 18rem;" id="full_detailing">
+                            <img src="./assets/images/services/full-detailing.jpg" class="card-img-top-two"
+                                alt="Full Detailing Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Full Detailing</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 container-fluid">
+                        <div class="card" style="width: 18rem;" id="basic_service_repair">
+                            <img src="./assets/images/services/repair.jpg" class="card-img-top-two"
+                                alt="Basic Service Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Service/Repair</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
