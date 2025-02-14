@@ -52,12 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
     continueBtn.addEventListener("click", () => {
 
         if (!date || !time || !name || !email || !car || !expert || !request) {
-            window.location.href = '/';
+            window.location.href = '/swerv/';
             return;
         }
 
         alert("Your booking has been confirmed! You will be emailed shortly.")
 
-        window.location.href = '/';
+        window.location.href = '/swerv/';
     });
 });

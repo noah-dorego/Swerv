@@ -58,6 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
         bookingData["request"] = request;
 
         localStorage.setItem("bookingData", JSON.stringify(bookingData));
-        window.location.href = '/booking/confirm';
+        window.location.href = '/swerv/booking/confirm';
     });
 });
