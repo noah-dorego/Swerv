@@ -1,5 +1,4 @@
 import { resolve } from 'path'
-import path from 'node:path'
 
 export default {
     base: "/swerv/",
@@ -7,11 +6,15 @@ export default {
         outDir: 'dist',
         rollupOptions: {
             input: {
-                index: path.resolve('index.html'),
-                services: path.resolve('services.html'),
-                location: path.resolve('location.html'),
-                contact: path.resolve('contact-us.html'),
-                review: path.resolve('review.html')
+                index: resolve('index.html'),
+                services: resolve('services.html'),
+                location: resolve('location.html'),
+                contact: resolve('contact-us.html'),
+                review: resolve('review.html'),
+                select: resolve('booking/select.html'),
+                experts: resolve('booking/experts.html'),
+                info: resolve('booking/info.html'),
+                confirm: resolve('booking/confirm.html'),
             }
         }
     },

@@ -1,0 +1,1 @@
+import{T as n}from"./bootstrap.esm-B0QWxZE1.js";document.getElementById("reviewForm").addEventListener("submit",function(e){e.preventDefault();var t=new n(document.getElementById("successToast"));t.show()});
