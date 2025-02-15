@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Swerv</title>
     <link rel="icon" type="image/x-icon" href="/swerv/assets/swerv_logo.svg">
-  <script type="module" crossorigin src="/swerv/assets/bootstrap.esm-B0QWxZE1.js"></script>
-  <script type="module" crossorigin src="/swerv/assets/main-BkTk3_l9.js"></script>
+  <script type="module" crossorigin src="/swerv/assets/services-hgOSRfvT.js"></script>
+  <link rel="modulepreload" crossorigin href="/swerv/assets/bootstrap.esm-B0QWxZE1.js">
   <link rel="stylesheet" crossorigin href="/swerv/assets/bootstrap-AXrMHHTN.css">
 </head>
 
@@ -52,66 +52,60 @@
         <h1 class="display-1 text-dark">Services</h1>
         <div class="row">
             <div class="col-lg-3 container-fluid">
-                <a href="/swerv/booking/select" style="text-decoration:none">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/swerv/assets/images/services/interior-detailing.jpg" class="card-img-top"
-                            alt="Interior Detailing Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Interior Detailing</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk
-                                of the card's content.
-                            </p>
-                        </div>
+                <div class="card" style="width: 18rem; cursor: pointer;" id="interior_detailing">
+                    <img src="/swerv/assets/images/services/interior-detailing.jpg" class="card-img-top"
+                        alt="Interior Detailing Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Interior Detailing</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk
+                            of the card's content.
+                        </p>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-lg-3 container-fluid">
-                <a href="/swerv/booking/select" style="text-decoration:none">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/swerv/assets/images/services/exterior-detailing.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Exterior Detailing</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk
-                                of the card's content.
-                            </p>
-                        </div>
+                <div class="card" style="width: 18rem; cursor: pointer;" id="exterior_detailing">
+                    <img src="/swerv/assets/images/services/exterior-detailing.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Exterior Detailing</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk
+                            of the card's content.
+                        </p>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-lg-3 container-fluid">
-                <a href="/swerv/booking/select" style="text-decoration:none">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/swerv/assets/images/services/full-detailing.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Full Detailing</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk
-                                of the card's content.
-                            </p>
-                        </div>
+                <div class="card" style="width: 18rem; cursor: pointer;" id="full_detailing">
+                    <img src="/swerv/assets/images/services/full-detailing.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Detailing</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk
+                            of the card's content.
+                        </p>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-lg-3 container-fluid">
-                <a href="/swerv/booking/select" style="text-decoration:none">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/swerv/assets/images/services/repair.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Basic Service/Repair</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk
-                                of the card's content.
-                            </p>
-                        </div>
+                <div class="card" style="width: 18rem; cursor: pointer;" id="basic_service_repair">
+                    <img src="/swerv/assets/images/services/repair.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Service/Repair</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk
+                            of the card's content.
+                        </p>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- BOTTOM NAVBAR-->
+    <!-- BOTTOM NAVBAR -->
+
+    <div class="mb-5"></div>
 
     <nav class="navbar fixed-bottom navbar-light bg-dark">
         <div class="container-fluid">

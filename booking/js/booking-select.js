@@ -4,31 +4,67 @@ import '/src/scss/styles.scss'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
+const interiorDetailingCard = document.getElementById("interior_detailing");
+const exteriorDetailingCard = document.getElementById("exterior_detailing");
+const fullDetailingCard = document.getElementById("full_detailing");
+const basicServiceCard = document.getElementById("basic_service_repair");
+
+function updateSelectedCard(selectedService) {
+    if (selectedService == "interior_detailing") {
+        interiorDetailingCard.style.outline = "thick solid #000000";
+        exteriorDetailingCard.style.outline = "";
+        fullDetailingCard.style.outline = "";
+        basicServiceCard.style.outline = "";
+    } else if (selectedService == "exterior_detailing") {
+        interiorDetailingCard.style.outline = "";
+        exteriorDetailingCard.style.outline = "thick solid #000000";
+        fullDetailingCard.style.outline = "";
+        basicServiceCard.style.outline = "";
+    } else if (selectedService == "full_detailing") {
+        interiorDetailingCard.style.outline = "";
+        exteriorDetailingCard.style.outline = "";
+        fullDetailingCard.style.outline = "thick solid #000000";
+        basicServiceCard.style.outline = "";
+    } else if (selectedService == "basic_service_repair") {
+        interiorDetailingCard.style.outline = "";
+        exteriorDetailingCard.style.outline = "";
+        fullDetailingCard.style.outline = "";
+        basicServiceCard.style.outline = "thick solid #000000";
+    } else {
+        interiorDetailingCard.style.outline = "";
+        exteriorDetailingCard.style.outline = "";
+        fullDetailingCard.style.outline = "";
+        basicServiceCard.style.outline = "";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const dateInput = document.getElementById("date");
     const timeInput = document.getElementById("time");
-    const interiorDetailingCard = document.getElementById("interior_detailing");
-    const exteriorDetailingCard = document.getElementById("exterior_detailing");
-    const fullDetailingCard = document.getElementById("full_detailing");
-    const basicServiceCard = document.getElementById("basic_service_repair");
     const continueBtn = document.getElementById("continue");
 
-    var selectedService = "";
+    const bookingData = JSON.parse(localStorage.getItem("bookingData"));
+    var selectedService = bookingData["service"] ?? "";
+    selectedService && updateSelectedCard(selectedService);
 
     interiorDetailingCard.addEventListener("click", () => {
         selectedService = "interior_detailing";
+        updateSelectedCard(selectedService);
     })
 
     exteriorDetailingCard.addEventListener("click", () => {
         selectedService = "exterior_detailing";
+        updateSelectedCard(selectedService);
     })
 
     fullDetailingCard.addEventListener("click", () => {
         selectedService = "full_detailing";
+        updateSelectedCard(selectedService);
     })
 
     basicServiceCard.addEventListener("click", () => {
         selectedService = "basic_service_repair";
+        updateSelectedCard(selectedService);
     })
 
     // Save data on button click
