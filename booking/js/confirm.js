@@ -32,19 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (bookingData["service"] == "interior_detailing") {
         selectedServiceTitle.innerHTML = "Interior Detailing";
-        img.src = "/assets/images/services/interior-detailing.jpg";
+        img.src = new URL("/assets/images/services/interior-detailing.jpg", import.meta.url).href;
         serviceImageContainer.append(img);
     } else if (bookingData["service"] == "exterior_detailing") {
         selectedServiceTitle.innerHTML = "Exterior Detailing"
-        img.src = "/assets/images/services/exterior-detailing.jpg";
+        img.src = new URL("/assets/images/services/exterior-detailing.jpg", import.meta.url).href;
         serviceImageContainer.append(img);
     } else if (bookingData["service"] == "full_detailing") {
         selectedServiceTitle.innerHTML = "Full Detailing"
-        img.src = "/assets/images/services/full-detailing.jpg";
+        img.src = new URL("/assets/images/services/full-detailing.jpg", import.meta.url).href;
         serviceImageContainer.append(img);
     } else if (bookingData["service"] == "basic_service_repair") {
         selectedServiceTitle.innerHTML = "Basic Repair/Service"
-        img.src = "/assets/images/services/repair.jpg";
+        img.src = new URL("/assets/images/services/repair.jpg", import.meta.url).href;
         serviceImageContainer.append(img);
     }
 
